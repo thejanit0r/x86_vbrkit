@@ -1,0 +1,68 @@
+# Loaded modules via INT 13H / AH=42H
+
+## Windows 10 - 21H2 - 10.0.19041.1288
+
+- bootmgr.exe: Boot Manager
+- bootuwf.dll: Boot Environment UWF Library
+- osloader.exe: OS Loader
+- bootres: Boot Resource Library
+- mcupdate.dll: Intel Microcode Update Library
+- ntkrnlmp.exe: NT Kernel & System
+- hal.dll: Hardware Abstraction Layer DLL
+- kd.dll: Local Kernel Debugger
+- tm.sys: Kernel Transaction Manager Driver
+- clfs.sys: Common Log File System Driver
+- pshed.dll: Platform Specific Hardware Error Driver
+- bootvid.dll: VGA Boot Driver
+- clipsp.dll: CLIP Service
+- fltMgr.sys: Microsoft Filesystem Filter Manager
+- ksecdd.sys: Kernel Security Support Provider Interface
+- krpcdd.sys: Kernel Remote Procedure Call Provider
+- werkernel: Windows Error Reporting Kernel Driver
+- ntosext.sys: NTOS extension host driver
+- ci.dll: Code Integrity Module
+- cng.sys: Kernel Cryptography, Next Generation
+- wdf01000.sys: Kernel Mode Driver Framework Runtime
+- wdfldr.sys: Kernel Mode Driver Framework Loader
+- WppRecorder.sys: WPP Trace Recorder
+- SgrmAgent: System Guard Runtime Monitor Agent Driver
+- WmiLib.sys: WMILIB WMI support library Dll
+- WdBoot: Microsoft antimalware boot driver
+- intelpep.sys: Intel Power Engine Plugin
+- IntelTA.sys: Intel Telemetry Driver
+- WindowsTrustedRTProxy.sys: Windows Trusted Runtime Service Proxy Driver
+- pci.sys: NT Plug and Play PCI Enumerator
+- EventAggregation.sys: Event Aggregation Kernel Mode Library
+- partmgr.sys: Partition driver
+- spaceport.sys: Storage Spaces Driver
+- intelide.sys: Intel PCI IDE Driver
+- pciidex.sys: PCI IDE Bus Driver Extension
+- volmgr.sys: Volume Manager Driver
+- volmgrx.sys: Volume Manager Extension Driver
+- mountmgr.sys: Mount Point Manager
+- atapi.sys: ATAPI IDE Miniport Driver
+- ataport.sys: ATAPI Driver Extension
+- storahci.sys: MS AHCI Storport Miniport Driver
+- storport.sys: Microsoft Storage Port Driver
+- stornvme.sys: Microsoft NVM Express Storport Miniport Driver
+- EhStorClass.sys: Enhanced Storage Class driver for IEEE 1667 devices
+- FileInfo.sys: FileInfo Filter Driver
+- wof.sys: Windows Overlay Filter
+- WdFilter: Microsoft antimalware file system filter driver
+- ntfs.sys: NT File System Driver
+- fs_rec.sys: File System Recognizer Driver
+- NDIS.SYS: Network Driver Interface Specification (NDIS)
+- netio.sys: Network I/O Subsystem
+- ksecpkg.sys: Kernel Security Support Provider Interface Packages
+- tcpip.sys: TCP/IP Driver
+- fwpkclnt.sys: FWP/IPsec Kernel-Mode API
+- WFPLWFS.SYS: WFP NDIS 6.30 Lightweight Filter Driver
+- FVEVOL.SYS: BitLocker Drive Encryption Driver
+- volume.sys: Volume driver
+- volsnap.sys: Volume Shadow Copy driver
+- rdyboost.sys: ReadyBoost Driver
+- MUP.SYS: Multiple UNC Provider Driver
+- iorate.sys: I/O rate control Filter
+- hwpolicy.sys: Hardware Policy Driver
+- disk.sys: PnP Disk Driver
+- Classpnp.sys: SCSI Class System Dll
