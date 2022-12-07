@@ -188,7 +188,7 @@ pe_get_debug_dir(void* base, ulong_t* size, bool_t file_aligned)
         {
             *size = pe32_get_optional_header(base)->data_directory.debug.size;
         }
-    }	
+    }   
 
     /* convert to file aligned offset */
     if(file_aligned)

@@ -316,10 +316,10 @@ main(int argc, char* argv[])
 
 #if 0
 
-    // BLKSSZGET: 		logical block size
-    // BLKBSZGET: 		physical block size
-    // BLKGETSIZE64: 	device size in bytes
-    // BLKGETSIZE: 		device size / 512
+    // BLKSSZGET:       logical block size
+    // BLKBSZGET:       physical block size
+    // BLKGETSIZE64:    device size in bytes
+    // BLKGETSIZE:      device size / 512
 
     if(ioctl(fd, BLKSSZGET, &sector_size) >= 0)
     {

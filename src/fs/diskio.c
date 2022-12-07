@@ -40,10 +40,10 @@ DSTATUS disk_initialize (void)
 /*-----------------------------------------------------------------------*/
 
 DRESULT disk_readp (
-    BYTE* buff,		/* Pointer to the destination object */
-    DWORD sector,	/* Sector number (LBA) */
-    UINT offset,	/* Offset in the sector */
-    UINT count		/* Byte count (bit15:destination) */
+    BYTE* buff,     /* Pointer to the destination object */
+    DWORD sector,   /* Sector number (LBA) */
+    UINT offset,    /* Offset in the sector */
+    UINT count      /* Byte count (bit15:destination) */
 )
 {
     uint8_t* buffer = (uint8_t *)malloc(512);
@@ -71,8 +71,8 @@ DRESULT disk_readp (
 /*-----------------------------------------------------------------------*/
 
 DRESULT disk_writep (
-    BYTE* buff,		/* Pointer to the data to be written, NULL:Initiate/Finalize write operation */
-    DWORD sc		/* Sector number (LBA) or Number of bytes to send */
+    BYTE* buff,     /* Pointer to the data to be written, NULL:Initiate/Finalize write operation */
+    DWORD sc        /* Sector number (LBA) or Number of bytes to send */
 )
 {
     static int sector_number;

@@ -139,11 +139,11 @@ print_mmap(void)
 
         switch(mmap_addr_desc.type)
         {
-            case 0x01: 	printf(FG_LMAGENTA, "FREE RAM"); break;
-            case 0x02: 	printf(FG_LMAGENTA, "RESERVED"); break;
-            case 0x03: 	printf(FG_LMAGENTA, "ACPI RECLAIM MEMORY"); break;
-            case 0x04: 	printf(FG_LMAGENTA, "ACPI NVS MEMORY"); break;
-            default: 	printf(FG_LMAGENTA, "RESERVED"); break;
+            case 0x01:  printf(FG_LMAGENTA, "FREE RAM"); break;
+            case 0x02:  printf(FG_LMAGENTA, "RESERVED"); break;
+            case 0x03:  printf(FG_LMAGENTA, "ACPI RECLAIM MEMORY"); break;
+            case 0x04:  printf(FG_LMAGENTA, "ACPI NVS MEMORY"); break;
+            default:    printf(FG_LMAGENTA, "RESERVED"); break;
         }
 
         printf(FG_LGREEN, "\n");
@@ -347,7 +347,7 @@ print_root_directory()
     if(pf_opendir(&dir, "/") == FR_OK)
     {
         FILINFO file_info;
-        char 	file_name[16];
+        char    file_name[16];
 
         while(pf_readdir(&dir, &file_info) == FR_OK && file_info.fname[0] != 0)
         {

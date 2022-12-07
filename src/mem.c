@@ -26,10 +26,10 @@
 
 /******************************************************************************/
 
-static uint8_t* 	mem_base = NULL;
-static size_t 		mem_size = 0;
-static size_t 		mem_allocated;
-static uint32_t 	mem_newly_freed_count;
+static uint8_t*     mem_base = NULL;
+static size_t       mem_size = 0;
+static size_t       mem_allocated;
+static uint32_t     mem_newly_freed_count;
 
 /******************************************************************************/
 

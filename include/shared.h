@@ -27,21 +27,21 @@
 /* Disk Address Packet (DAP) */
 typedef struct 
 {
-    uint8_t  	packet_size;
-    uint8_t		reserved;
-    uint16_t 	sectors_to_transfer;
-    uint16_t 	dst_offs;
-    uint16_t 	dst_seg;
-    uint64_t 	sector_start;
+    uint8_t     packet_size;
+    uint8_t     reserved;
+    uint16_t    sectors_to_transfer;
+    uint16_t    dst_offs;
+    uint16_t    dst_seg;
+    uint64_t    sector_start;
 
 } __attribute__((packed)) dap_t;
 
 /* System memory map address range descriptor */
 typedef struct 
 {
-    uint64_t  	base_address;
-    uint64_t	size;
-    uint32_t 	type;
+    uint64_t    base_address;
+    uint64_t    size;
+    uint32_t    type;
 
 } __attribute__((packed)) mmap_addr_desc_t;
 
@@ -62,14 +62,14 @@ typedef struct
 /* real mode isr callback context */
 typedef struct 
 {
-    pushad_regs_t 	saved_regs;
-    uint32_t 		efl;
-    uint16_t 		ds;
-    uint16_t 		es;
-    uint16_t 		ax;
-    uint16_t 		isr;
-    uint16_t 		ret_offs;
-    uint16_t 		ret_seg;
+    pushad_regs_t   saved_regs;
+    uint32_t        efl;
+    uint16_t        ds;
+    uint16_t        es;
+    uint16_t        ax;
+    uint16_t        isr;
+    uint16_t        ret_offs;
+    uint16_t        ret_seg;
 
 } __attribute__((packed)) isr_rm_ctx_t;
 
@@ -165,11 +165,11 @@ typedef struct
         uint16_t di;
     };
 
-    uint32_t	efl;
-    uint16_t 	es;
-    uint16_t 	ds;
+    uint32_t    efl;
+    uint16_t    es;
+    uint16_t    ds;
     
-    dap_t 		dap;
+    dap_t       dap;
 
 } __attribute__((packed)) rmode_ctx_t;
 

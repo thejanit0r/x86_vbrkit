@@ -24,73 +24,73 @@
 
 typedef struct 
 {
-    char 		signature[4];
-    uint16_t  	version;
-    uint32_t  	oem;
-    uint32_t  	capabilities;
-    uint32_t  	video_modes;
-    uint16_t  	video_memory;
-    uint16_t  	software_rev;
-    uint32_t 	vendor;
-    uint32_t 	product_name;
-    uint32_t 	product_rev;	
-    char 		reserved[222];	
-    char 		oem_data[256];
+    char        signature[4];
+    uint16_t    version;
+    uint32_t    oem;
+    uint32_t    capabilities;
+    uint32_t    video_modes;
+    uint16_t    video_memory;
+    uint16_t    software_rev;
+    uint32_t    vendor;
+    uint32_t    product_name;
+    uint32_t    product_rev;    
+    char        reserved[222];  
+    char        oem_data[256];
 
 } __attribute__ ((packed)) vbe_info_t;
 
 typedef struct 
 {
-    uint16_t 	attributes;
-    uint8_t 	win_a_attribs;
-    uint8_t 	win_b_attribs;
-    uint16_t 	win_granularity;
-    uint16_t 	win_size;
-    uint16_t 	win_a_segment;
-    uint16_t 	win_b_segment;
-    uint32_t 	win_func_ptr;
-    uint16_t 	bytes_per_scanline; 
-    uint16_t 	x_res;
-    uint16_t 	y_res;
-    uint8_t 	x_char_size;
-    uint8_t 	y_char_size;
-    uint8_t 	planes;
-    uint8_t 	bpp;
-    uint8_t 	banks;
-    uint8_t 	memory_model;
-    uint8_t 	bank_size;
-    uint8_t 	image_pages;
-    uint8_t 	reserved_page;
-    uint8_t 	red_mask_size;
-    uint8_t 	red_mask_pos;
-    uint8_t 	green_mask_size;
-    uint8_t 	green_mask_pos;
-    uint8_t 	blue_mask_size;
-    uint8_t  	blue_mask_pos;
-    uint8_t 	reserved_mask_size;
-    uint8_t 	reserved_mask_pos;
-    uint8_t 	direct_color_attributes;
-    uint32_t 	phys_base_ptr; 
-    uint32_t 	offscreen_mem_offset;
-    uint16_t 	offscreen_mem_size;
+    uint16_t    attributes;
+    uint8_t     win_a_attribs;
+    uint8_t     win_b_attribs;
+    uint16_t    win_granularity;
+    uint16_t    win_size;
+    uint16_t    win_a_segment;
+    uint16_t    win_b_segment;
+    uint32_t    win_func_ptr;
+    uint16_t    bytes_per_scanline; 
+    uint16_t    x_res;
+    uint16_t    y_res;
+    uint8_t     x_char_size;
+    uint8_t     y_char_size;
+    uint8_t     planes;
+    uint8_t     bpp;
+    uint8_t     banks;
+    uint8_t     memory_model;
+    uint8_t     bank_size;
+    uint8_t     image_pages;
+    uint8_t     reserved_page;
+    uint8_t     red_mask_size;
+    uint8_t     red_mask_pos;
+    uint8_t     green_mask_size;
+    uint8_t     green_mask_pos;
+    uint8_t     blue_mask_size;
+    uint8_t     blue_mask_pos;
+    uint8_t     reserved_mask_size;
+    uint8_t     reserved_mask_pos;
+    uint8_t     direct_color_attributes;
+    uint32_t    phys_base_ptr; 
+    uint32_t    offscreen_mem_offset;
+    uint16_t    offscreen_mem_size;
 
 } __attribute__ ((packed)) vesa_mode_info_t;
 
 typedef struct
 {
-    uint32_t 	width;
-    uint32_t	height;
-    uint8_t 	bpp;
-    uint8_t* 	ptr;
+    uint32_t    width;
+    uint32_t    height;
+    uint8_t     bpp;
+    uint8_t*    ptr;
 
 } bmp_t;
 
 typedef struct
 {
-    uint32_t 	width; /* bits */
-    uint32_t	height; /* bytes */
-    uint8_t 	scale;
-    uint8_t* 	ptr;
+    uint32_t    width; /* bits */
+    uint32_t    height; /* bytes */
+    uint8_t     scale;
+    uint8_t*    ptr;
 
 } font_t;
 

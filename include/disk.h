@@ -24,8 +24,8 @@
 
 /******************************************************************************/
 
-#define WRITE 	                0x00
-#define READ	                  0x01
+#define WRITE                   0x00
+#define READ                      0x01
 
 /* hard disks */
 #define DRIVE_HDD_START         0x80

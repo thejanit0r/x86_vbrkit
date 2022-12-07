@@ -99,7 +99,7 @@ puts(char* str, uint8_t color)
     while(*str != 0) 
     {
         putch(*str++, color);
-    }		
+    }       
 }
 
 void 
@@ -108,7 +108,7 @@ putsw(wchar_t* str, uint8_t color)
     while(*str != 0) 
     {
         putch((char)*str++, color);
-    }		
+    }       
 }
 
 void
@@ -172,7 +172,7 @@ printf(uint8_t color, char* fmt, ...)
 
                     itoa(n, tmp, sizeof(tmp), ((c == 'x') ? 16 : 10));
                     puts(tmp, color);
-                    break;	  
+                    break;    
                 }    
                 case 'c':
                 {

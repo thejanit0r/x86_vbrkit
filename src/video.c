@@ -420,7 +420,7 @@ bmp_get_pixel(bmp_t* bmp, uint32_t x, uint32_t y, uint32_t* rgb)
 
     vesa_get_color(tmp, bmp->bpp, &r, &g, &b);
 
-    *rgb = (uint32_t)(r << 16 | g << 8 | b);	
+    *rgb = (uint32_t)(r << 16 | g << 8 | b);    
 }
 
 void
@@ -436,7 +436,7 @@ bmp_set_pixel(bmp_t* bmp, uint32_t x, uint32_t y, uint32_t rgb)
     tmp += y * (bmp->width * pixel_size);
 
     vesa_set_color(tmp, bmp->bpp, 
-        (rgb >> 16) & 0xFF, (rgb >> 8) & 0xFF, rgb & 0xFF);	
+        (rgb >> 16) & 0xFF, (rgb >> 8) & 0xFF, rgb & 0xFF); 
 }
 
 void 

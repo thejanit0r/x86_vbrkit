@@ -47,7 +47,7 @@ serial_port_init(int port)
         0x06 :  19200 bps 
         0x0C :   9600 bps 
         0x18 :   4800 bps 
-        0x30 :   2400 bps 	
+        0x30 :   2400 bps   
     */
     outportb(port + UART_DLL, 0x01); /* 115200 bps */
     outportb(port + UART_DLM, 0x00);
@@ -114,5 +114,5 @@ serial_puts(int port, char* str)
     while(*str != 0) 
     {
         serial_putch(port, *str++);
-    }		
+    }       
 }

@@ -75,9 +75,9 @@ __movsb(void* dst, void* src, size_t size)
         "rep movsb;"
         : /* output operands - none */
         : /* input operands */
-        "D" (dst),	/* edi/di */
-        "S" (src),	/* esi/si */
-        "c" (size) 	/* ecx/cx/cl */
+        "D" (dst),  /* edi/di */
+        "S" (src),  /* esi/si */
+        "c" (size)  /* ecx/cx/cl */
         : /* clobbers */
         "memory" );
 }
@@ -90,9 +90,9 @@ __movsd(void* dst, void* src, size_t size)
         "rep movsd;"
         : /* output operands - none */
         : /* input operands */
-        "D" (dst),	/* edi/di */
-        "S" (src),	/* esi/si */
-        "c" (size) 	/* ecx/cx/cl */
+        "D" (dst),  /* edi/di */
+        "S" (src),  /* esi/si */
+        "c" (size)  /* ecx/cx/cl */
         : /* clobbers */
         "memory" );
 }
@@ -105,9 +105,9 @@ __stosb(void* dst, uint8_t data, size_t size)
         "rep stosb;"
         : /* output operands - none */
         : /* input operands */
-        "D" (dst),	/* edi/di */
-        "a" (data),	/* eax/ax/al */
-        "c" (size) 	/* ecx/cx/cl */
+        "D" (dst),  /* edi/di */
+        "a" (data), /* eax/ax/al */
+        "c" (size)  /* ecx/cx/cl */
         : /* clobbers */
         "memory" );
 }
@@ -120,9 +120,9 @@ __stosd(void* dst, uint32_t data, size_t size)
         "rep stosl;"
         : /* output operands - none */
         : /* input operands */
-        "D" (dst),	/* edi/di */
-        "a" (data),	/* eax/ax/al */
-        "c" (size) 	/* ecx/cx/cl */
+        "D" (dst),  /* edi/di */
+        "a" (data), /* eax/ax/al */
+        "c" (size)  /* ecx/cx/cl */
         : /* clobbers */
         "memory" );
 }
@@ -148,8 +148,8 @@ outportb(uint16_t port, uint8_t val)
         "outb %0, %1" 
         : /* output operands - none */
         : /* input operands */
-        "a" (val), 	/* eax/ax/al */
-        "d" (port) 	/* edx/dx/dl */
+        "a" (val),  /* eax/ax/al */
+        "d" (port)  /* edx/dx/dl */
     );
 }
 
@@ -160,8 +160,8 @@ outportw(uint16_t port, uint16_t val)
         "outw %0, %1" 
         : /* output operands - none */
         : /* input operands */
-        "a" (val), 	/* eax/ax/al */
-        "d" (port) 	/* edx/dx/dl */
+        "a" (val),  /* eax/ax/al */
+        "d" (port)  /* edx/dx/dl */
     );
 }
 
@@ -173,9 +173,9 @@ inportb(uint16_t port)
     __asm__ volatile (
         "inb %1, %0" 
         : /* output operands */
-        "=a" (val) 	/* eax/ax/al */
+        "=a" (val)  /* eax/ax/al */
         : /* input operands */
-        "d" (port) 	/* edx/dx/dl */
+        "d" (port)  /* edx/dx/dl */
     );
 
     return val;
@@ -189,9 +189,9 @@ inportw(uint16_t port)
     __asm__ volatile (
         "inw %1, %0" 
         : /* output operands */
-        "=a" (val) 	/* eax/ax/al */
+        "=a" (val)  /* eax/ax/al */
         : /* input operands */
-        "d" (port) 	/* edx/dx/dl */
+        "d" (port)  /* edx/dx/dl */
     );
 
     return val;
@@ -590,7 +590,7 @@ sprintf(char* buffer, char* fmt, ...)
                         ((c == 'x') ? 16 : 10));
 
                     strcat(buffer, tmp);
-                    break;	  
+                    break;    
                 }    
                 case 'c':
                 {
@@ -633,14 +633,14 @@ sprintf(char* buffer, char* fmt, ...)
 int32_t
 atoi(char* s, char** end)
 {
-    char		c;
-    char*		tmp = s;
-    bool_t		neg = false;
+    char        c;
+    char*       tmp = s;
+    bool_t      neg = false;
     
-    int32_t		any = 0;
-    uint32_t	acc = 0;
-    int32_t		cutlim;
-    uint32_t	cutoff;
+    int32_t     any = 0;
+    uint32_t    acc = 0;
+    int32_t     cutlim;
+    uint32_t    cutoff;
 
     /* find the first char */
     for(/* */; (c = *s) == ' '; s++);
@@ -660,8 +660,8 @@ atoi(char* s, char** end)
         }
     }
 
-    #define LONG_MAX	2147483647L
-    #define LONG_MIN	(-LONG_MAX - 1L)
+    #define LONG_MAX    2147483647L
+    #define LONG_MIN    (-LONG_MAX - 1L)
 
     cutoff = (neg ? -(uint32_t)LONG_MIN : LONG_MAX);
     cutlim = cutoff % 10;
@@ -719,10 +719,10 @@ atoi(char* s, char** end)
 void*
 findpattern(void* start, size_t size, char* ptrn)
 {
-    size_t		pos = 0;
-    uint8_t		hex;
-    uint8_t*	match = NULL;
-    uint8_t*	curr = (uint8_t *)start;
+    size_t      pos = 0;
+    uint8_t     hex;
+    uint8_t*    match = NULL;
+    uint8_t*    curr = (uint8_t *)start;
 
     for(/* */; size--; curr++)
     {
@@ -761,9 +761,9 @@ findpattern(void* start, size_t size, char* ptrn)
 void*
 findstr_a(void* start, size_t size, char* str)
 {
-    size_t	pos = 0;
-    char*	match = NULL;
-    char*	curr = (char *)start;
+    size_t  pos = 0;
+    char*   match = NULL;
+    char*   curr = (char *)start;
 
     for(/* */; size--; curr++)
     {
@@ -784,9 +784,9 @@ findstr_a(void* start, size_t size, char* str)
 void*
 findstr_w(void* start, size_t size, wchar_t* str)
 {
-    size_t		pos = 0;
-    wchar_t*	match = NULL;
-    wchar_t*	curr = (wchar_t *)start;
+    size_t      pos = 0;
+    wchar_t*    match = NULL;
+    wchar_t*    curr = (wchar_t *)start;
 
     for(/* */; size -= 2; curr++)
     {

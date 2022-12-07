@@ -24,44 +24,44 @@
 
 /******************************************************************************/
 
-#define FG_BLACK 		  	(0)
-#define FG_BLUE 		  	(1)
-#define FG_GREEN 		  	(2)
-#define FG_CYAN 		 	(3)
-#define FG_RED 			  	(4)
-#define FG_MAGENTA 			(5)
-#define FG_BROWN 		  	(6)
-#define FG_LGRAY 		  	(7)
-#define FG_DGRAY 		  	(8)	
-#define FG_LBLUE 		  	(9)
-#define FG_LGREEN 			(10)
-#define FG_LCYAN 		  	(11)
-#define FG_LRED 		  	(12)
-#define FG_LMAGENTA 		(13)
-#define FG_YELLOW 			(14)
-#define FG_WHITE 		  	(15)
+#define FG_BLACK            (0)
+#define FG_BLUE             (1)
+#define FG_GREEN            (2)
+#define FG_CYAN             (3)
+#define FG_RED              (4)
+#define FG_MAGENTA          (5)
+#define FG_BROWN            (6)
+#define FG_LGRAY            (7)
+#define FG_DGRAY            (8) 
+#define FG_LBLUE            (9)
+#define FG_LGREEN           (10)
+#define FG_LCYAN            (11)
+#define FG_LRED             (12)
+#define FG_LMAGENTA         (13)
+#define FG_YELLOW           (14)
+#define FG_WHITE            (15)
 
-#define BG_BLACK 		 	(FG_BLACK 		<< 4)
-#define BG_BLUE 		 	(FG_BLUE 		<< 4)
-#define BG_GREEN 		  	(FG_GREEN 		<< 4)
-#define BG_CYAN 		  	(FG_CYAN 	 	<< 4)
-#define BG_RED 			 	(FG_RED 		<< 4)
-#define BG_MAGENTA 			(FG_MAGENTA 	<< 4)
-#define BG_BROWN 		  	(FG_BROWN 		<< 4)
-#define BG_LGRAY 		  	(FG_LGRAY 		<< 4)
-#define BG_DGRAY 		  	(FG_DGRAY 		<< 4)	
-#define BG_LBLUE 		  	(FG_LBLUE 		<< 4)
-#define BG_LGREEN 			(FG_LGREEN 		<< 4)
-#define BG_LCYAN 		  	(FG_LCYAN 		<< 4)
-#define BG_LRED 		  	(FG_LRED 		<< 4)
-#define BG_LMAGENTA 		(FG_LMAGENTA 	<< 4)
-#define BG_YELLOW 			(FG_YELLOW 		<< 4)
-#define BG_WHITE 		  	(FG_WHITE 		<< 4)
+#define BG_BLACK            (FG_BLACK       << 4)
+#define BG_BLUE             (FG_BLUE        << 4)
+#define BG_GREEN            (FG_GREEN       << 4)
+#define BG_CYAN             (FG_CYAN        << 4)
+#define BG_RED              (FG_RED         << 4)
+#define BG_MAGENTA          (FG_MAGENTA     << 4)
+#define BG_BROWN            (FG_BROWN       << 4)
+#define BG_LGRAY            (FG_LGRAY       << 4)
+#define BG_DGRAY            (FG_DGRAY       << 4)   
+#define BG_LBLUE            (FG_LBLUE       << 4)
+#define BG_LGREEN           (FG_LGREEN      << 4)
+#define BG_LCYAN            (FG_LCYAN       << 4)
+#define BG_LRED             (FG_LRED        << 4)
+#define BG_LMAGENTA         (FG_LMAGENTA    << 4)
+#define BG_YELLOW           (FG_YELLOW      << 4)
+#define BG_WHITE            (FG_WHITE       << 4)
 
-#define SERIAL_PORT1 		0x3F8 /* COM 1, ttyS0 */
-#define SERIAL_PORT2 		0x2F8 /* COM 2, ttyS1 */
-#define SERIAL_PORT3 		0x3E8 /* COM 3, ttyS2 */
-#define SERIAL_PORT4 		0x2E8 /* COM 4, ttyS3 */
+#define SERIAL_PORT1        0x3F8 /* COM 1, ttyS0 */
+#define SERIAL_PORT2        0x2F8 /* COM 2, ttyS1 */
+#define SERIAL_PORT3        0x3E8 /* COM 3, ttyS2 */
+#define SERIAL_PORT4        0x2E8 /* COM 4, ttyS3 */
 
 /******************************************************************************/
 

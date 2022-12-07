@@ -34,13 +34,13 @@
 
 /******************************************************************************/
 
-#define MEM_FREE 	0
-#define MEM_USED 	1
+#define MEM_FREE    0
+#define MEM_USED    1
 
 typedef struct 
 {
-    uint8_t 	status;
-    size_t 		size;
+    uint8_t     status;
+    size_t      size;
 
 } malloc_blk_t;
 

@@ -24,50 +24,50 @@
 
     #include <windows.h>
 
-    typedef	LARGE_INTEGER			large_int_t;
+    typedef LARGE_INTEGER           large_int_t;
 
     #if(_MSC_VER < 1300)
 
-        typedef	SIZE_T				size_t;
-        typedef signed char			int8_t;
-        typedef signed short		int16_t;
-        typedef signed int			int32_t;
-        typedef long long			int64_t
+        typedef SIZE_T              size_t;
+        typedef signed char         int8_t;
+        typedef signed short        int16_t;
+        typedef signed int          int32_t;
+        typedef long long           int64_t
 
-        typedef unsigned char		uint8_t;
-        typedef unsigned short		uint16_t;
-        typedef unsigned int		uint32_t;
-        typedef unsigned long long	uint64_t;
+        typedef unsigned char       uint8_t;
+        typedef unsigned short      uint16_t;
+        typedef unsigned int        uint32_t;
+        typedef unsigned long long  uint64_t;
 
     #else
 
-        typedef signed __int8		int8_t;
-        typedef signed __int16		int16_t;
-        typedef signed __int32		int32_t;
-        typedef signed __int64		int64_t;
+        typedef signed __int8       int8_t;
+        typedef signed __int16      int16_t;
+        typedef signed __int32      int32_t;
+        typedef signed __int64      int64_t;
 
-        typedef unsigned __int8		uint8_t;
-        typedef unsigned __int16	uint16_t;
-        typedef unsigned __int32	uint32_t;
-        typedef unsigned __int64	uint64_t;
+        typedef unsigned __int8     uint8_t;
+        typedef unsigned __int16    uint16_t;
+        typedef unsigned __int32    uint32_t;
+        typedef unsigned __int64    uint64_t;
 
-        typedef signed long			long_t;
-        typedef unsigned long		ulong_t;
-        typedef unsigned char		uchar_t;
-        typedef unsigned short		ushort_t;
+        typedef signed long         long_t;
+        typedef unsigned long       ulong_t;
+        typedef unsigned char       uchar_t;
+        typedef unsigned short      ushort_t;
 
     #endif
 
     #if defined(_WIN64)
 
-        typedef signed __int64    	intptr_t;
-        typedef unsigned __int64  	uintptr_t;
-        typedef	unsigned __int64	size_t;
+        typedef signed __int64      intptr_t;
+        typedef unsigned __int64    uintptr_t;
+        typedef unsigned __int64    size_t;
 
     #else
 
-        typedef signed int   		intptr_t;
-        typedef unsigned int 		uintptr_t;
+        typedef signed int          intptr_t;
+        typedef unsigned int        uintptr_t;
 
     #endif
 
@@ -77,18 +77,18 @@
     #include <stddef.h>
     #include <stdint.h>
 
-    typedef signed long			long_t;
-    typedef unsigned long		ulong_t;
-    typedef unsigned char		uchar_t;
-    typedef unsigned short		ushort_t;
+    typedef signed long         long_t;
+    typedef unsigned long       ulong_t;
+    typedef unsigned char       uchar_t;
+    typedef unsigned short      ushort_t;
 
 #endif
 
 typedef unsigned int bool_t;
 
 /* should be uppercase but let's make an exception */
-#define true 	1
-#define false 	0
+#define true    1
+#define false   0
 
 #ifndef __cplusplus
     #define NULL    ((void *)0)
